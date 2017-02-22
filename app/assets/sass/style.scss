@@ -1,0 +1,75 @@
+/*!
+Theme Name: -HiØ, alternativ 1, Twenty Sixteen
+Theme URI: github.com/hiof/twentysixteen-hiof-child
+Description: Bloggmal alternativ 1. Minimalistisk tema med støtte for to spalter.
+Author: Kenneth Lindbeck-Dahlstrøm
+Author URI: http://design.hiof.no/web?del=bloggmal-alternativ-1
+Template: twentysixteen
+Version: 1.0.0
+License: GNU General Public License v3 or later
+License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
+Tags: HiØ, child-theme, hiof, østfold-university-college, høgskolen-i-østfold, twentysixteen, twenty-sixteen
+Usage: Copy the twentysixteen-hiof-child folder into your wp-content/themes/ directory and activate it in the dashboard.
+Text Domain: hiof-alternativ3-twentysixteen
+*/
+
+.byline, .updated{
+  display: inline;
+}
+
+@import "../../../vendor/hiof-frontend/app/assets/sass/variables/_border-radius";
+@import "../../../vendor/hiof-color/app/assets/sass/_variables";
+@import "../../../vendor/hiof-typography/app/assets/sass/_variables";
+@import "../../../vendor/hiof-typography/dist/typography";
+
+//reset font-size to $body-font-size
+#page *:not(pre),
+#page *:not(code){
+  font-family: $body-font-family !important;
+}
+
+blockquote, .widget, .widget-title{
+  font-size: $body-font-size !important;
+  //font-family: $body-font-family !important;
+}
+.site-title{
+  font-size: 2.8rem;
+  font-family: $body-font-family !important;
+}
+.site-description{
+  font-size: 1.3rem;
+}
+.entry-title{
+  font-family: $body-font-family !important;
+  //font-weight: 100;
+  a{
+    border-bottom: none !important;
+  }
+}
+.entry-content a,
+.entry-summary a,
+.taxonomy-description a,
+.logged-in-as a,
+.comment-content a,
+.pingback .comment-body > a,
+.textwidget a,
+.entry-footer a:hover,
+.site-info a:hover{
+  box-shadow: none;
+}
+.post-thumbnail{
+  border-bottom: none !important;
+}
+.more-link{
+
+}
+.widget button, .widget input, .widget select, .widget textarea{
+  font-size: 1.3rem;
+}
+#site-navigation,
+.widget{
+  ul li,
+  ol li{
+    margin-left: 0;
+  }
+}
